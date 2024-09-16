@@ -15,10 +15,9 @@
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "debug": "node --loader ts-node/esm --inspect-brk src/server.ts",
     "clean": "rimraf dist",
     "clean-build": "npm run clean && npm run build",
-    "prepare": "husky"
+    "prepare": "husky init"
   },
   "dependencies": {
     "cors": "^2.8.5",
