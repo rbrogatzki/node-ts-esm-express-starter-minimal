@@ -1,6 +1,10 @@
 {
   "name": "express-ts-demo",
-  "version": "1.0.0",
+  "description": "",
+  "version": "0.0.1",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "main": "src/server.ts",
   "type": "module",
   "scripts": {
@@ -14,17 +18,14 @@
     "debug": "node --loader ts-node/esm --inspect-brk src/server.ts",
     "clean": "rimraf dist",
     "clean-build": "npm run clean && npm run build",
-    "prepare": "husky init"
+    "prepare": "husky"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.0",
-    "helmet": "^7.1.0"
+    "helmet": "^7.1.0",
+    "dotenv": "^16.4.5"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
@@ -33,7 +34,6 @@
     "@types/node": "^22.5.5",
     "@typescript-eslint/eslint-plugin": "^8.6.0",
     "@typescript-eslint/parser": "^8.6.0",
-    "dotenv": "^16.4.5",
     "eslint": "^9.10.0",
     "husky": "^9.1.6",
     "rimraf": "^6.0.1",
