@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "main": "src/server.ts",
+  "license": "MIT",
+  "main": "dist/src/server.ts",
   "type": "module",
   "scripts": {
     "start": "node dist/server.js",
@@ -14,7 +14,7 @@
     "type-check": "tsc --noEmit",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test": "jest --runInBand .",
     "clean": "rimraf dist",
     "clean-build": "npm run clean && npm run build",
     "prepare": "husky init"
