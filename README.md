@@ -10,6 +10,7 @@ Minimalistic project template for a Node.js & TypeScript app with native ESM
     -️ tsx: Node.js enhanced to run TypeScript & ESM files
     - tsc-alias: Import path alias using @/ prefix (not implemented yet)
     - ESLint — To find and fix problems in your code
+    - testing with Jest (not implemented yet)
     - Express.js
     - husky - pre-commit hooks
         - commitlint
